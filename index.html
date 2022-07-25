@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <title>Naruto Memory Card Game!</title>
+  </head>
+  <body>
+    <div id="app">
+        <header>
+          <img :src="logo" alt="logo" />
+        </header>
+        <div id="main-content">
+          <div id="scoreboard">
+            <p>Score: {{ score }}</p>
+            <p>High score: {{ highscore }}</p>
+          </div>
+        <div id="cards">
+          <div v-for="(card, index) in cards" class="card" @click="chooseCard(index)">
+            <img :src="card.src" :key="index">
+            <p>{{ card.name }}</p>
+          </div>
+        </div>
+        </div>
+        <footer>
+          Developed by Ktavean, 2022.
+        </footer>
+      </div>
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>

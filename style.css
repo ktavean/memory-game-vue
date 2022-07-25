@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: "ninja-naruto";
+    src: url("./Assets/Fonts/njnaruto.ttf");
+}
+
+#scoreboard p, footer {
+    color: #FFFFFF;
+}
+
+header img {
+    width: 35em;
+    height: 15em;
+}
+
+#app {
+    font-family: "ninja-naruto";
+    display: flex;
+    height: 100%;
+    width: 100%;
+    gap: 1em;
+    flex-direction: column;
+    align-items: center;
+    background: #FF750D;
+}
+
+footer {
+    font-family: Helvetica, Arial;
+    background-color: #000000;
+    width: 100%;
+    text-align: center;
+    padding-top: 1em;
+}
+
+#main-content {
+    padding-top: 1em;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+    flex-grow: 1;
+
+}
+
+#scoreboard {
+    align-self: flex-end;
+    margin-right: 3em;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+
+#cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1em;
+    padding-bottom: 1em;
+}
+
+img {
+    width: 18em;
+    height: 12em;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(255, 165, 0);
+    box-shadow: 1px 1px 15px black;
+    padding: 2em 2em 1em 2em;
+    color: white;
+    letter-spacing: 2px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.card p {
+    width: 10.5em;
+    text-align: center;
+    margin-top: 1em;
+    background-color: #FF750D;
+    border-radius: 20px;
+    padding-top: 0.3em;
+    color: #FFFFFF;
+    box-shadow: 1px 1px 5px black;
+}
+
+.card:hover {
+    background-color: rgba(255, 255, 255, 0.6);
+}
